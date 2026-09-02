@@ -4,234 +4,432 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Blog Gelo</title>
+    <title>Nord — Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="topbar">
+    <!-- FUNDO DECORATIVO -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
 
-        <a href="#" class="logo">
-            <span class="logo-icon">B</span>
-            <span>BLOG</span>
-        </a>
+    <!-- HEADER -->
+    <header class="header">
 
-        <nav>
+        <div class="logo">
+            <span class="logo-mark">N</span>
+
+            <div>
+                <strong>NORD</strong>
+                <small>ideias que ficam</small>
+            </div>
+        </div>
+
+        <nav class="nav">
             <a href="#inicio" class="active">Início</a>
-            <a href="#artigos">Artigos</a>
+            <a href="#destaques">Destaques</a>
+            <a href="#categorias">Categorias</a>
             <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
         </nav>
 
-        <button id="themeBtn" class="theme-btn">
-            ☾
-        </button>
+        <div class="header-actions">
+
+            <button class="icon-button" id="searchButton" aria-label="Pesquisar">
+                🔍
+            </button>
+
+            <button class="icon-button" id="themeButton" aria-label="Alterar tema">
+                ☾
+            </button>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+        </div>
 
     </header>
 
 
-    <main>
+    <!-- BUSCA -->
+    <div class="search-box" id="searchBox">
 
-        <!-- INÍCIO -->
-        <section class="hero" id="inicio">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Pesquisar no blog..."
+        >
+
+        <button id="closeSearch">×</button>
+
+    </div>
+
+
+    <!-- CONTEÚDO -->
+    <main id="inicio">
+
+        <!-- HERO -->
+        <section class="hero">
 
             <div class="hero-text">
 
-                <span class="eyebrow">
-                    ✦ BEM-VINDO AO BLOG
-                </span>
+                <div class="tag">
+                    <span></span>
+                    edição de hoje
+                </div>
 
                 <h1>
-                    Ideias que merecem
-                    <span>ser compartilhadas.</span>
+                    Ideias, histórias
+                    <em>e coisas que valem</em>
+                    a sua atenção.
                 </h1>
 
                 <p>
-                    Textos, histórias, tecnologia e pensamentos
-                    para ler com calma e descobrir algo novo.
+                    Um espaço para descobrir coisas interessantes,
+                    acompanhar tendências e encontrar novas formas
+                    de enxergar o mundo.
                 </p>
 
-                <a href="#artigos" class="primary-btn">
-                    Explorar artigos
-                    <span>→</span>
-                </a>
+                <div class="hero-buttons">
+
+                    <a href="#destaques" class="primary-button">
+                        Explorar artigos
+                        <span>→</span>
+                    </a>
+
+                    <a href="#categorias" class="secondary-button">
+                        Ver categorias
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <div class="featured-card">
+            <div class="hero-card">
 
-                <div class="featured-icon">
-                    ✎
+                <div class="hero-image">
+                    <div class="image-label">EM ALTA</div>
                 </div>
 
-                <small>
-                    ARTIGO EM DESTAQUE
-                </small>
+                <div class="hero-card-content">
 
-                <h2>
-                    Por que ainda vale a pena escrever?
-                </h2>
+                    <span class="category">
+                        Cultura
+                    </span>
 
-                <p>
-                    Uma reflexão sobre criatividade, internet
-                    e o simples prazer de colocar ideias no papel.
-                </p>
+                    <h2>
+                        Por que algumas histórias
+                        continuam vivas mesmo depois
+                        de tantos anos?
+                    </h2>
+
+                    <p>
+                        Uma viagem pelas histórias que marcaram
+                        gerações e continuam influenciando a cultura.
+                    </p>
+
+                    <div class="article-info">
+                        <span>06 min de leitura</span>
+                        <span>•</span>
+                        <span>Hoje</span>
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- ARTIGOS -->
-        <section class="section" id="artigos">
+        <!-- CATEGORIAS -->
+        <section class="categories-section" id="categorias">
 
-            <div class="section-header">
+            <div class="section-heading">
 
                 <div>
-                    <span class="eyebrow">
-                        ÚLTIMOS POSTS
-                    </span>
-
-                    <h2>
-                        Leia algo novo
-                    </h2>
+                    <span class="small-title">EXPLORE</span>
+                    <h2>Encontre seu assunto.</h2>
                 </div>
 
-                <button id="filterBtn" class="filter-btn">
-                    Todos ▾
+                <p>
+                    Escolha uma categoria e descubra
+                    novas histórias.
+                </p>
+
+            </div>
+
+
+            <div class="category-list">
+
+                <button class="category-card active-category" data-category="Todos">
+                    <span class="category-number">01</span>
+                    <strong>Todos</strong>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Tecnologia">
+                    <span class="category-number">02</span>
+                    <strong>Tecnologia</strong>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Cultura">
+                    <span class="category-number">03</span>
+                    <strong>Cultura</strong>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Música">
+                    <span class="category-number">04</span>
+                    <strong>Música</strong>
+                    <span>→</span>
+                </button>
+
+                <button class="category-card" data-category="Entretenimento">
+                    <span class="category-number">05</span>
+                    <strong>Entretenimento</strong>
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTAQUES -->
+        <section class="articles-section" id="destaques">
+
+            <div class="section-heading articles-heading">
+
+                <div>
+                    <span class="small-title">PUBLICAÇÕES</span>
+                    <h2>Últimas histórias.</h2>
+                </div>
+
+                <button class="view-all" id="viewAll">
+                    Ver todas →
                 </button>
 
             </div>
 
 
-            <div class="posts">
+            <div class="articles-grid" id="articlesGrid">
 
-                <!-- POST 1 -->
-                <article class="post" data-category="Tecnologia">
 
-                    <div class="post-image image-one">
-                        <span>TECNOLOGIA</span>
+                <!-- ARTIGO 1 -->
+                <article class="article-card" data-category="Tecnologia">
+
+                    <div class="article-image image-tech">
+                        <span>Tecnologia</span>
                     </div>
 
-                    <div class="post-content">
+                    <div class="article-content">
 
-                        <div class="post-meta">
-                            <span>02 SET 2026</span>
-                            <span>•</span>
-                            <span>5 MIN</span>
+                        <div class="article-top">
+                            <span>TECNOLOGIA</span>
+                            <span>04 MIN</span>
                         </div>
 
                         <h3>
-                            O futuro da tecnologia está mais perto do que parece
+                            A tecnologia está mudando
+                            a maneira como pensamos?
                         </h3>
 
                         <p>
-                            Algumas mudanças parecem pequenas hoje,
-                            mas podem transformar completamente nossa rotina.
+                            Como as novas ferramentas digitais
+                            estão transformando nossa rotina.
                         </p>
 
-                        <div class="post-footer">
-
-                            <button class="like-btn">
-                                <span>♡</span>
-                                <b>24</b>
-                            </button>
-
-                            <button class="share-btn">
-                                ↗
-                            </button>
-
-                        </div>
+                        <a href="#" class="read-link">
+                            Ler história →
+                        </a>
 
                     </div>
 
                 </article>
 
 
-                <!-- POST 2 -->
-                <article class="post" data-category="Ideias">
+                <!-- ARTIGO 2 -->
+                <article class="article-card" data-category="Cultura">
 
-                    <div class="post-image image-two">
-                        <span>IDEIAS</span>
+                    <div class="article-image image-culture">
+                        <span>Cultura</span>
                     </div>
 
-                    <div class="post-content">
+                    <div class="article-content">
 
-                        <div class="post-meta">
-                            <span>30 AGO 2026</span>
-                            <span>•</span>
-                            <span>4 MIN</span>
+                        <div class="article-top">
+                            <span>CULTURA</span>
+                            <span>05 MIN</span>
                         </div>
 
                         <h3>
-                            Você não precisa ter tudo resolvido
+                            O poder das referências
+                            que atravessam gerações.
                         </h3>
 
                         <p>
-                            Às vezes, continuar caminhando é mais importante
-                            do que saber exatamente onde chegar.
+                            Filmes, músicas e histórias que
+                            nunca deixam de influenciar.
                         </p>
 
-                        <div class="post-footer">
-
-                            <button class="like-btn">
-                                <span>♡</span>
-                                <b>38</b>
-                            </button>
-
-                            <button class="share-btn">
-                                ↗
-                            </button>
-
-                        </div>
+                        <a href="#" class="read-link">
+                            Ler história →
+                        </a>
 
                     </div>
 
                 </article>
 
 
-                <!-- POST 3 -->
-                <article class="post" data-category="Cotidiano">
+                <!-- ARTIGO 3 -->
+                <article class="article-card" data-category="Música">
 
-                    <div class="post-image image-three">
-                        <span>COTIDIANO</span>
+                    <div class="article-image image-music">
+                        <span>Música</span>
                     </div>
 
-                    <div class="post-content">
+                    <div class="article-content">
 
-                        <div class="post-meta">
-                            <span>27 AGO 2026</span>
-                            <span>•</span>
-                            <span>6 MIN</span>
+                        <div class="article-top">
+                            <span>MÚSICA</span>
+                            <span>07 MIN</span>
                         </div>
 
                         <h3>
-                            Pequenas coisas que deixam um dia melhor
+                            Quando uma música deixa
+                            de ser apenas uma música.
                         </h3>
 
                         <p>
-                            Uma lista simples de hábitos, lugares e momentos
-                            que fazem diferença sem chamar atenção.
+                            A relação entre memória, identidade
+                            e aquilo que escutamos.
                         </p>
 
-                        <div class="post-footer">
-
-                            <button class="like-btn">
-                                <span>♡</span>
-                                <b>51</b>
-                            </button>
-
-                            <button class="share-btn">
-                                ↗
-                            </button>
-
-                        </div>
+                        <a href="#" class="read-link">
+                            Ler história →
+                        </a>
 
                     </div>
+
+                </article>
+
+
+                <!-- ARTIGO 4 -->
+                <article class="article-card" data-category="Entretenimento">
+
+                    <div class="article-image image-entertainment">
+                        <span>Entretenimento</span>
+                    </div>
+
+                    <div class="article-content">
+
+                        <div class="article-top">
+                            <span>ENTRETENIMENTO</span>
+                            <span>03 MIN</span>
+                        </div>
+
+                        <h3>
+                            Por que algumas séries
+                            simplesmente conquistam todo mundo?
+                        </h3>
+
+                        <p>
+                            O que transforma uma produção em
+                            um fenômeno cultural.
+                        </p>
+
+                        <a href="#" class="read-link">
+                            Ler história →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- EM ALTA -->
+        <section class="trending-section">
+
+            <div class="trending-header">
+
+                <div>
+                    <span class="small-title">AGORA</span>
+                    <h2>O que está em alta.</h2>
+                </div>
+
+                <span class="trend-line"></span>
+
+            </div>
+
+
+            <div class="trending-list">
+
+                <article class="trend-item">
+
+                    <span class="trend-number">01</span>
+
+                    <div>
+                        <span class="trend-category">CULTURA</span>
+
+                        <h3>
+                            As histórias que definiram uma geração
+                        </h3>
+
+                        <p>8,4 mil leituras</p>
+                    </div>
+
+                    <span class="trend-arrow">↗</span>
+
+                </article>
+
+
+                <article class="trend-item">
+
+                    <span class="trend-number">02</span>
+
+                    <div>
+                        <span class="trend-category">TECNOLOGIA</span>
+
+                        <h3>
+                            O futuro que já começou
+                        </h3>
+
+                        <p>6,8 mil leituras</p>
+                    </div>
+
+                    <span class="trend-arrow">↗</span>
+
+                </article>
+
+
+                <article class="trend-item">
+
+                    <span class="trend-number">03</span>
+
+                    <div>
+                        <span class="trend-category">MÚSICA</span>
+
+                        <h3>
+                            Sons que mudaram a cultura
+                        </h3>
+
+                        <p>5,2 mil leituras</p>
+                    </div>
+
+                    <span class="trend-arrow">↗</span>
 
                 </article>
 
@@ -243,61 +441,97 @@
         <!-- NEWSLETTER -->
         <section class="newsletter" id="sobre">
 
-            <div>
+            <div class="newsletter-symbol">
+                N
+            </div>
 
-                <span class="eyebrow">
-                    NEWSLETTER
+            <div class="newsletter-text">
+
+                <span class="small-title">
+                    FIQUE POR DENTRO
                 </span>
 
                 <h2>
-                    Uma ideia nova de vez em quando.
+                    Uma boa história
+                    pode chegar até você.
                 </h2>
 
                 <p>
-                    Receba os próximos textos diretamente no seu e-mail.
+                    Receba novidades, textos e descobertas
+                    diretamente no seu e-mail.
                 </p>
 
             </div>
 
 
-            <form id="newsletterForm">
+            <form class="newsletter-form" id="newsletterForm">
 
                 <input
                     type="email"
-                    id="email"
                     placeholder="Seu melhor e-mail"
                     required
                 >
 
                 <button type="submit">
-                    Quero receber
+                    Quero receber →
                 </button>
 
             </form>
-
-            <p id="formMessage" class="form-message"></p>
 
         </section>
 
     </main>
 
 
-    <!-- RODAPÉ -->
-    <footer id="contato">
+    <!-- FOOTER -->
+    <footer class="footer">
 
-        <div class="footer-logo">
-            <span class="logo-icon">B</span>
-            <strong>BLOG</strong>
+        <div class="footer-brand">
+
+            <div class="logo">
+                <span class="logo-mark">N</span>
+
+                <div>
+                    <strong>NORD</strong>
+                    <small>ideias que ficam</small>
+                </div>
+            </div>
+
+            <p>
+                Um lugar para ideias,
+                histórias e descobertas.
+            </p>
+
         </div>
 
-        <p>
-            Feito para ideias, histórias e pessoas.
-        </p>
 
-        <div class="socials">
-            <a href="#">◎</a>
-            <a href="#">𝕏</a>
-            <a href="#">▶</a>
+        <div class="footer-links">
+
+            <div>
+                <strong>Explorar</strong>
+                <a href="#inicio">Início</a>
+                <a href="#destaques">Destaques</a>
+                <a href="#categorias">Categorias</a>
+            </div>
+
+            <div>
+                <strong>Redes</strong>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">YouTube</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 NORD</span>
+
+            <span>
+                Feito para quem gosta de descobrir.
+            </span>
+
         </div>
 
     </footer>
