@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Gelo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="topbar">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">B</span>
+            <span>BLOG</span>
+        </a>
+
+        <nav>
+            <a href="#inicio" class="active">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button id="themeBtn" class="theme-btn">
+            ☾
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    ✦ BEM-VINDO AO BLOG
+                </span>
+
+                <h1>
+                    Ideias que merecem
+                    <span>ser compartilhadas.</span>
+                </h1>
+
+                <p>
+                    Textos, histórias, tecnologia e pensamentos
+                    para ler com calma e descobrir algo novo.
+                </p>
+
+                <a href="#artigos" class="primary-btn">
+                    Explorar artigos
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="featured-card">
+
+                <div class="featured-icon">
+                    ✎
+                </div>
+
+                <small>
+                    ARTIGO EM DESTAQUE
+                </small>
+
+                <h2>
+                    Por que ainda vale a pena escrever?
+                </h2>
+
+                <p>
+                    Uma reflexão sobre criatividade, internet
+                    e o simples prazer de colocar ideias no papel.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTIGOS -->
+        <section class="section" id="artigos">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="eyebrow">
+                        ÚLTIMOS POSTS
+                    </span>
+
+                    <h2>
+                        Leia algo novo
+                    </h2>
+                </div>
+
+                <button id="filterBtn" class="filter-btn">
+                    Todos ▾
+                </button>
+
+            </div>
+
+
+            <div class="posts">
+
+                <!-- POST 1 -->
+                <article class="post" data-category="Tecnologia">
+
+                    <div class="post-image image-one">
+                        <span>TECNOLOGIA</span>
+                    </div>
+
+                    <div class="post-content">
+
+                        <div class="post-meta">
+                            <span>02 SET 2026</span>
+                            <span>•</span>
+                            <span>5 MIN</span>
+                        </div>
+
+                        <h3>
+                            O futuro da tecnologia está mais perto do que parece
+                        </h3>
+
+                        <p>
+                            Algumas mudanças parecem pequenas hoje,
+                            mas podem transformar completamente nossa rotina.
+                        </p>
+
+                        <div class="post-footer">
+
+                            <button class="like-btn">
+                                <span>♡</span>
+                                <b>24</b>
+                            </button>
+
+                            <button class="share-btn">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- POST 2 -->
+                <article class="post" data-category="Ideias">
+
+                    <div class="post-image image-two">
+                        <span>IDEIAS</span>
+                    </div>
+
+                    <div class="post-content">
+
+                        <div class="post-meta">
+                            <span>30 AGO 2026</span>
+                            <span>•</span>
+                            <span>4 MIN</span>
+                        </div>
+
+                        <h3>
+                            Você não precisa ter tudo resolvido
+                        </h3>
+
+                        <p>
+                            Às vezes, continuar caminhando é mais importante
+                            do que saber exatamente onde chegar.
+                        </p>
+
+                        <div class="post-footer">
+
+                            <button class="like-btn">
+                                <span>♡</span>
+                                <b>38</b>
+                            </button>
+
+                            <button class="share-btn">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- POST 3 -->
+                <article class="post" data-category="Cotidiano">
+
+                    <div class="post-image image-three">
+                        <span>COTIDIANO</span>
+                    </div>
+
+                    <div class="post-content">
+
+                        <div class="post-meta">
+                            <span>27 AGO 2026</span>
+                            <span>•</span>
+                            <span>6 MIN</span>
+                        </div>
+
+                        <h3>
+                            Pequenas coisas que deixam um dia melhor
+                        </h3>
+
+                        <p>
+                            Uma lista simples de hábitos, lugares e momentos
+                            que fazem diferença sem chamar atenção.
+                        </p>
+
+                        <div class="post-footer">
+
+                            <button class="like-btn">
+                                <span>♡</span>
+                                <b>51</b>
+                            </button>
+
+                            <button class="share-btn">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter" id="sobre">
+
+            <div>
+
+                <span class="eyebrow">
+                    NEWSLETTER
+                </span>
+
+                <h2>
+                    Uma ideia nova de vez em quando.
+                </h2>
+
+                <p>
+                    Receba os próximos textos diretamente no seu e-mail.
+                </p>
+
+            </div>
+
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu melhor e-mail"
+                    required
+                >
+
+                <button type="submit">
+                    Quero receber
+                </button>
+
+            </form>
+
+            <p id="formMessage" class="form-message"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+
+        <div class="footer-logo">
+            <span class="logo-icon">B</span>
+            <strong>BLOG</strong>
+        </div>
+
+        <p>
+            Feito para ideias, histórias e pessoas.
+        </p>
+
+        <div class="socials">
+            <a href="#">◎</a>
+            <a href="#">𝕏</a>
+            <a href="#">▶</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
