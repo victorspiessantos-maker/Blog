@@ -249,7 +249,7 @@ function setupTheme() {
 
   const savedTheme =
     localStorage.getItem(
-      "technexo_theme"
+      "techlrx_theme"
     );
 
 
@@ -280,7 +280,7 @@ function setupTheme() {
 
 
       localStorage.setItem(
-        "technexo_theme",
+        "techlrx_theme",
         isDark ? "dark" : "light"
       );
 
@@ -581,7 +581,7 @@ function setupHome() {
 function likesKey(id) {
 
   return (
-    "technexo_likes_" + id
+    "techlrx_likes_" + id
   );
 
 }
@@ -590,7 +590,7 @@ function likesKey(id) {
 function likedKey(id) {
 
   return (
-    "technexo_liked_" + id
+    "techlrx_liked_" + id
   );
 
 }
@@ -682,7 +682,7 @@ function setupArticle() {
 
   document.title =
     post.title +
-    " — TechNexo";
+    " — TechLrx";
 
 
   $("#articleCategory")
