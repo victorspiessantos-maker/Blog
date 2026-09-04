@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>TechNexo — Tecnologia sem complicação</title>
-  <meta name="description" content="Tecnologia explicada de forma simples, bonita e direta.">
+
+  <meta
+    name="description"
+    content="Tecnologia explicada de forma simples, bonita e direta."
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,16 +33,35 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-button" id="themeBtn" title="Mudar tema">☾</button>
-        <button class="menu-button" id="menuBtn">☰</button>
+
+        <button
+          class="icon-button"
+          id="themeBtn"
+          aria-label="Alterar tema"
+        >
+          ☾
+        </button>
+
+        <button
+          class="menu-button"
+          id="menuBtn"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
+
       </div>
 
     </div>
   </header>
 
+
   <main>
 
+    <!-- HERO -->
+
     <section class="hero" id="inicio">
+
       <div class="hero-content">
 
         <div class="eyebrow">
@@ -61,14 +86,25 @@
 
       </div>
 
+
       <div class="hero-visual">
+
         <div class="visual-orbit orbit-one"></div>
         <div class="visual-orbit orbit-two"></div>
 
         <div class="visual-card main-card">
-          <div class="visual-icon">✦</div>
+
+          <div class="visual-icon">
+            ✦
+          </div>
+
           <span>TECHNOLOGY</span>
-          <h3>Ideias que<br>conectam.</h3>
+
+          <h3>
+            Ideias que<br>
+            conectam.
+          </h3>
+
         </div>
 
         <div class="floating-card card-one">
@@ -85,59 +121,110 @@
           <span>✧</span>
           <small>IA</small>
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- ARTIGOS -->
 
     <section class="articles-section" id="artigos">
 
       <div class="section-heading">
+
         <div>
-          <span class="section-label">CONTEÚDO</span>
-          <h2>Últimos artigos</h2>
+          <span class="section-label">
+            CONTEÚDO
+          </span>
+
+          <h2>
+            Últimos artigos
+          </h2>
         </div>
 
         <p>
           Conteúdo direto ao ponto para você entender
           melhor o mundo digital.
         </p>
+
       </div>
 
+
       <div class="search-box">
+
         <span>⌕</span>
+
         <input
           type="text"
           id="search"
           placeholder="Pesquisar artigos..."
         >
+
       </div>
 
-      <div class="category-list" id="categories"></div>
 
-      <div class="posts-grid" id="posts"></div>
+      <div
+        class="category-list"
+        id="categories"
+      ></div>
 
-      <div class="empty" id="empty" style="display:none;">
+
+      <div
+        class="posts-grid"
+        id="posts"
+      ></div>
+
+
+      <div
+        class="empty"
+        id="empty"
+        style="display:none;"
+      >
+
         <div>⌕</div>
-        <h3>Nenhum artigo encontrado</h3>
-        <p>Tente pesquisar outro termo.</p>
+
+        <h3>
+          Nenhum artigo encontrado
+        </h3>
+
+        <p>
+          Tente pesquisar outro termo.
+        </p>
+
       </div>
 
     </section>
 
 
-    <section class="about-section" id="sobre">
+    <!-- SOBRE -->
 
-      <div class="about-icon">✦</div>
+    <section
+      class="about-section"
+      id="sobre"
+    >
+
+      <div class="about-icon">
+        ✦
+      </div>
 
       <div>
-        <span class="section-label">SOBRE O TECHNEXO</span>
-        <h2>Menos complicação.<br>Mais tecnologia.</h2>
+
+        <span class="section-label">
+          SOBRE O TECHNEXO
+        </span>
+
+        <h2>
+          Menos complicação.<br>
+          Mais tecnologia.
+        </h2>
 
         <p>
           O TechNexo nasceu para transformar assuntos de tecnologia
           que parecem complicados em conteúdos simples, úteis e
           fáceis de entender.
         </p>
+
       </div>
 
     </section>
@@ -145,7 +232,10 @@
   </main>
 
 
+  <!-- FOOTER -->
+
   <footer>
+
     <div class="footer-inner">
 
       <a href="index.html" class="logo">
@@ -153,13 +243,23 @@
         <span>Tech<span>Nexo</span></span>
       </a>
 
-      <p>© 2026 TechNexo. Conteúdo independente.</p>
+      <p>
+        © 2026 TechNexo. Conteúdo independente.
+      </p>
 
     </div>
+
   </footer>
 
 
-  <button class="top-button" id="topBtn">↑</button>
+  <button
+    class="top-button"
+    id="topBtn"
+    aria-label="Voltar ao topo"
+  >
+    ↑
+  </button>
+
 
   <script src="script.js"></script>
 
