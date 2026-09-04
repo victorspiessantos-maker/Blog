@@ -7,7 +7,7 @@ const posts = [
     description:
       "Processador, memória, tela, bateria e atualizações: entenda o que realmente importa antes de comprar.",
     date: "2 de setembro de 2026",
-    icon: "◉",
+    image: "img/celular.png",
 
     content: `
       <p>
@@ -477,9 +477,9 @@ function setupArticle() {
   $("#articleDate").textContent =
     post.date;
 
-  $("#articleCoverIcon").textContent =
-    post.icon;
-
+  $("#articleCoverImage").src = post.image;
+  $("#articleCoverImage").alt = post.title;
+  
   $("#articleContent").innerHTML =
     post.content;
 
