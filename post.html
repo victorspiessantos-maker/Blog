@@ -1,71 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+  <title>Artigo — TechNexo</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Artigo — TechNexo</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+  <div class="progress-bar" id="progress"></div>
 
-<header class="header">
+  <header class="header">
+    <div class="header-inner">
 
-    <a href="index.html" class="logo">
-        Tech<span>Nexo</span>
-    </a>
+      <a href="index.html" class="logo">
+        <span class="logo-symbol">✦</span>
+        <span>Tech<span>Nexo</span></span>
+      </a>
 
-    <nav class="nav">
+      <nav id="nav">
+        <a href="index.html">Início</a>
+        <a href="index.html#artigos">Artigos</a>
+        <a href="index.html#sobre">Sobre</a>
+      </nav>
 
-        <a href="index.html">
-            Início
-        </a>
+      <div class="header-actions">
+        <button class="icon-button" id="themeBtn">☾</button>
+        <button class="menu-button" id="menuBtn">☰</button>
+      </div>
 
-        <a href="index.html#artigos">
-            Artigos
-        </a>
-
-        <a href="index.html#sobre">
-            Sobre
-        </a>
-
-    </nav>
-
-</header>
-
+    </div>
+  </header>
 
 
-<main id="article-container">
+  <main>
 
-    <!-- O artigo será carregado pelo JavaScript -->
+    <article class="article-page" id="article">
 
-</main>
+      <a href="index.html" class="back-link">
+        ← Voltar para artigos
+      </a>
+
+      <div class="article-category" id="articleCategory"></div>
+
+      <h1 id="articleTitle"></h1>
+
+      <p class="article-description" id="articleDescription"></p>
+
+      <div class="article-meta">
+        <span id="articleDate"></span>
+      </div>
 
 
+      <div class="article-actions">
 
-<footer>
+        <button class="action-button" id="likeBtn">
+          <span id="likeIcon">♡</span>
+          <span id="likeText">Curtir</span>
+          <span id="likeCount">0</span>
+        </button>
 
-    <p>
-        TechNexo © 2026
-    </p>
+        <button class="action-button" id="shareBtn">
+          ↗ Compartilhar
+        </button>
 
-</footer>
+        <button class="action-button" id="copyBtn">
+          ⧉ Copiar link
+        </button>
+
+      </div>
 
 
+      <div class="article-cover" id="articleCover">
+        <span id="articleCoverIcon"></span>
+      </div>
 
-<script src="script.js"></script>
+
+      <div class="article-content" id="articleContent"></div>
+
+
+      <div class="related">
+
+        <div class="section-heading small-heading">
+          <div>
+            <span class="section-label">CONTINUE LENDO</span>
+            <h2>Você também pode gostar</h2>
+          </div>
+        </div>
+
+        <div class="related-grid" id="related"></div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+    <div class="footer-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-symbol">✦</span>
+        <span>Tech<span>Nexo</span></span>
+      </a>
+
+      <p>© 2026 TechNexo. Conteúdo independente.</p>
+
+    </div>
+  </footer>
+
+
+  <button class="top-button" id="topBtn">↑</button>
+
+  <script src="script.js"></script>
 
 </body>
-
 </html>
